@@ -603,6 +603,12 @@ video {
 .h-\[35px\] {
   height: 35px;
 }
+.min-h-\[130px\] {
+  min-height: 130px;
+}
+.min-h-\[140px\] {
+  min-height: 140px;
+}
 .w-10 {
   width: 2.5rem;
 }
@@ -737,9 +743,6 @@ video {
 }
 .bg-\[color\:var\(--orange\)\] {
   background-color: var(--orange);
-}
-.bg-\[color\:var\(blue\)\] {
-  background-color: var(blue);
 }
 .bg-gray-100 {
   --tw-bg-opacity: 1;
