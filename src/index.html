@@ -356,7 +356,7 @@ div .download {
 </script>
     
     <!-- i host this project on github -->
-  <link href='https://cdn.jsdelivr.net/gh/zidane168/build-tailwindcss-template-project@main/build-webzone-techtips/styles.css' rel='stylesheet'/>
+  <link href='https://cdn.jsdelivr.net/gh/zidane168/build-tailwindcss-template-project@latest/build-webzone-techtips/styles.css?v=1.0' rel='stylesheet'/>
     
    <!--  <script src='https://cdn.tailwindcss.com'/>
      <script>
@@ -2792,7 +2792,7 @@ div .download {
                               <div class='relative'>
                                 <div expr:class='data:showSnippets ? &quot;item-content&quot; : &quot;item-thumbnail-only&quot;'>
                                   <b:if cond='data:post.featuredImage.isResizable or data:post.thumbnail'>
-                                    <div class='w-full item-thumbnail min-h-[140px] flex justify-center'>
+                                    <div class='w-full item-thumbnail mt-[140px] flex justify-center'>
                                       <a expr:href='data:post.href' target='_blank'>
                                         <b:with value='data:post.featuredImage.isResizable  ? resizeImage(data:post.featuredImage, 400, &quot;1:1&quot;) : data:post.thumbnail' var='image'>
                                           <img alt='' border='0' class=' hover:scale-110 w-[330px] shadow-lg p-4 text-white  ' expr:src='data:image'/>
@@ -2806,7 +2806,7 @@ div .download {
                                     </a>
                                   </h2>
                                   <b:if cond='data:showSnippets'>
-                                    <div class='p-2 mt-2 text-justify bg-white item-snippet mobile:text-sm desktop:text-sm'>
+                                    <div class='p-2 mt-2 text-justify bg-white item-snippet mobile:text-sm desktop:text-sm min-h-[450px]'>
                                       <!-- <data:post.dateHeader/> ko co thuoc tinh nay -->
                                       <data:post.snippet/>
                                     </div>
