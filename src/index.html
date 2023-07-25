@@ -3,6 +3,158 @@
 <html lang='en' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
     <b:skin><![CDATA[
     
+/* Menu Customize by Zidane */
+.desktop-menu a {
+  text-decoration: none;
+  color: black;
+}
+ul.desktop-menu { 
+  padding: 20px;
+  display: flex;
+  gap: 30px;
+  box-sizing: border-box;
+  flex-direction: row;
+}
+ul.desktop-menu li {
+  line-height: 30px;
+}
+ul.desktop-menu li a {
+  color: white;
+}
+ul.desktop-menu li:hover > a {
+  border-bottom: 2px solid white;
+}
+ul.desktop-menu li.full-stack-menu:hover .menu-box {
+  position: absolute;
+  display: block;
+  animation: fullstackMenu 0.3s ease;
+  background-color: #6fbaf3;
+  box-shadow: 10px 10px #1b1c1c;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 10px;
+  z-index: 5;
+  width: 1100px;
+}
+ul.desktop-menu li.devops-menu:hover .menu-box {
+  position: absolute;
+  display: block;
+  animation: devopsMenu 0.3s ease;
+  background-color: #6fbaf3;
+  box-shadow: 10px 10px #1b1c1c;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 10px;
+  z-index: 5;
+  width: 600px;
+}
+ul.desktop-menu li.special-menu:hover .menu-box {
+  position: absolute;
+  display: block;
+  animation: specialMenu 0.3s ease;
+  background-color: #6fbaf3;
+  box-shadow: 10px 10px #1b1c1c;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  z-index: 5;
+  width: 1100px;
+}
+ul.desktop-menu li.blockchain-menu:hover > ul {
+  position: absolute;
+  display: block;
+  animation: blockchainMenu 0.3s ease;
+  background-color: #6fbaf3;
+  box-shadow: 10px 10px #1b1c1c;
+  padding: 10px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  z-index: 5;
+  width: 400px;
+}
+ul.desktop-menu li.solved-menu:hover > ul {
+  position: absolute;
+  display: block;
+  animation: solvedMenu 0.3s ease;
+  background-color: #6fbaf3;
+  box-shadow: 10px 10px #1b1c1c;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 10px;
+  z-index: 5;
+  width: 1200px;
+} 
+.desktop-menu .menu-box .content div:hover > a {
+  border-bottom: 2px solid white;
+}
+.desktop-menu .menu-box .first-section div:hover {
+  border: 2px solid white;
+}
+.desktop-menu .menu-box .second-section img {
+  border-radius: 5px;
+}
+.desktop-menu .menu-box .second-section a:hover .description {
+  animation: imgScale 0.3s ease;
+}
+.desktop-menu .menu-box img {
+  transform: scale(1.1);
+}
+.desktop-menu .menu-box img:hover {
+  animation: imgScale 0.3s ease;
+}
+.desktop-menu .hidden {
+  display: none;
+}
+@keyframes imgScale {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+@keyframes blockchainMenu {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 210px;
+  }
+}
+@keyframes solvedMenu {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 230px;
+  }
+}
+@keyframes fullstackMenu {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 450px;
+  }
+}
+@keyframes specialMenu {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 390px;
+  }
+}
+@keyframes devopsMenu {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 140px;
+  }
+} 
+
+/* end of menu customize by Zidane */ 
+
     
 /* image center */    
     .separator {
@@ -364,7 +516,7 @@ div .download {
 </script>
     
     <!-- i host this project on github -->
-  <link href='https://cdn.jsdelivr.net/gh/zidane168/build-tailwindcss-template-project@latest/build-webzone-techtips/styles.css?v=1.1' rel='stylesheet'/>
+  <link href='https://cdn.jsdelivr.net/gh/zidane168/build-tailwindcss-template-project@latest/build-webzone-techtips/styles2.css' rel='stylesheet'/>
     
    <!--  <script src='https://cdn.tailwindcss.com'/>
      <script>
@@ -491,10 +643,10 @@ div .download {
             <b:widget-setting name='link-4'>https://www.tiktok.com/@learntechtips</b:widget-setting>
             <b:widget-setting name='text-1'>Facebook</b:widget-setting>
             <b:widget-setting name='text-0'>Discord</b:widget-setting>
-            <b:widget-setting name='text-3'>Linkin</b:widget-setting>
+            <b:widget-setting name='text-3'>Linkedin</b:widget-setting>
             <b:widget-setting name='text-2'>Github</b:widget-setting>
             <b:widget-setting name='text-5'>Youtube</b:widget-setting>
-            <b:widget-setting name='text-4'>Tiktok</b:widget-setting>
+            <b:widget-setting name='text-4'>TikTok</b:widget-setting>
             <b:widget-setting name='sorting'>ALPHABETICAL</b:widget-setting>
             <b:widget-setting name='link-1'>https://www.facebook.com/learntechtips168/</b:widget-setting>
             <b:widget-setting name='link-2'>https://github.com/zidane168/</b:widget-setting>
@@ -537,307 +689,265 @@ div .download {
           </b:includable>
         </b:widget>
       </b:section>
-      <!-- Menu -->
+      <!-- Start Menu -->
       <div class='bg-[color:var(--blue)]  mobile:p-2 desktop:rounded-md desktop:relative flex mobile:justify-center desktop:justify-between '>
-        <div class='px-2 desktop:px-8 mobile:hidden desktop:block'>
-          <div class='relative flex items-center justify-between h-16'>
-            <div class='flex items-center justify-center'>
-              <div class='flex space-x-4'>
+        <div class='h-16 px-2 desktop:px-8 mobile:hidden desktop:block'>
+          <ul class="items-center desktop-menu" >
+            <li> 
                 <a class='hover:scale-125' href='/' rel='noopener noreferrer' target='_blank'>
-                  <img alt='learn tech tips logo' class='w-[40px]' src='https://learn-tech-tips.blogspot.com/favicon.ico'/>
-                </a>
-               
-
-                <div class="block lg:hidden mobile-menu">
-                    <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-                    <svg width="20px" height="20px" viewBox="-0.5 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M19 3.32001H16C14.8954 3.32001 14 4.21544 14 5.32001V8.32001C14 9.42458 14.8954 10.32 16 10.32H19C20.1046 10.32 21 9.42458 21 8.32001V5.32001C21 4.21544 20.1046 3.32001 19 3.32001Z"
-                            stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        <path
-                            d="M8 3.32001H5C3.89543 3.32001 3 4.21544 3 5.32001V8.32001C3 9.42458 3.89543 10.32 5 10.32H8C9.10457 10.32 10 9.42458 10 8.32001V5.32001C10 4.21544 9.10457 3.32001 8 3.32001Z"
-                            stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        <path
-                            d="M19 14.32H16C14.8954 14.32 14 15.2154 14 16.32V19.32C14 20.4246 14.8954 21.32 16 21.32H19C20.1046 21.32 21 20.4246 21 19.32V16.32C21 15.2154 20.1046 14.32 19 14.32Z"
-                            stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        <path
-                            d="M8 14.32H5C3.89543 14.32 3 15.2154 3 16.32V19.32C3 20.4246 3.89543 21.32 5 21.32H8C9.10457 21.32 10 20.4246 10 19.32V16.32C10 15.2154 9.10457 14.32 8 14.32Z"
-                            stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <img alt='learn tech tips logo' class='w-[40px]' src='https://learn-tech-tips.blogspot.com/favicon.ico'/>
+                </a>  
+            </li>
+            <li class="special-menu">
+                <div class="flex gap-2">
+                    <a href="#"> Improve Your Tech </a>
+                    <svg style="width: 20px;  " xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white">
+                        <g data-name="15.Arrow Down">
+                            <path
+                                d="M12 24a12 12 0 1 1 12-12 12.013 12.013 0 0 1-12 12zm0-22a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2z" />
+                            <path d="m12 18.414-4.707-4.707 1.414-1.414L12 15.586l3.293-3.293 1.414 1.414L12 18.414z" />
+                            <path d="M11 6h2v11h-2z" />
+                        </g>
                     </svg>
                 </div>
-                <ul class="hidden lg:flex desktop-menu">
-                    <li class="hidden special-menu lg:block">
-                        <div class="flex gap-2">
-                            <a href="#"> Improve Your Tech </a>
-                            <svg style="width: 20px;  " xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white">
-                                <g data-name="15.Arrow Down">
-                                    <path
-                                        d="M12 24a12 12 0 1 1 12-12 12.013 12.013 0 0 1-12 12zm0-22a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2z" />
-                                    <path d="m12 18.414-4.707-4.707 1.414-1.414L12 15.586l3.293-3.293 1.414 1.414L12 18.414z" />
-                                    <path d="M11 6h2v11h-2z" />
-                                </g>
-                            </svg>
-                        </div>
-
-                        <div class="hidden menu-box">
-
-                            <div class="grid lg:grid-cols-2 second-section md:grid-cols-1">
-                                <!--<a href="#" class="flex justify-center p-2">
-                                    <img src="./img/bg1.jpg" style="width: 100px; height: 100px" alt="bg2.jpg" />
-                                    <div class="pl-12 description"> This is description for topic 1 This is description for topic 1
-                                        This is description for topic 1 This is description for topic 1</div>
-                                </a> -->
-
-                            </div>
-                        </div>
+    
+                <div class="hidden menu-box">
+    
+                    <div class="grid lg:grid-cols-2 second-section ">
+                        <!--<a href="#" class="flex justify-center p-2">
+                            <img src="./img/bg1.jpg" style="width: 100px; height: 100px" alt="bg2.jpg" />
+                            <div class="pl-12 description"> This is description for topic 1 This is description for topic 1
+                                This is description for topic 1 This is description for topic 1</div>
+                        </a> -->
+    
+                    </div>
+                </div>
+            </li>
+    
+            <li class="blockchain-menu">
+                <div class="flex gap-2 ">
+                    <a href="#"> Blockchain </a>
+                    <svg style="width: 20px; " xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white">
+                        <g data-name="15.Arrow Down">
+                            <path
+                                d="M12 24a12 12 0 1 1 12-12 12.013 12.013 0 0 1-12 12zm0-22a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2z" />
+                            <path d="m12 18.414-4.707-4.707 1.414-1.414L12 15.586l3.293-3.293 1.414 1.414L12 18.414z" />
+                            <path d="M11 6h2v11h-2z" />
+                        </g>
+                    </svg>
+                </div>
+                <ul class="hidden">
+                    <li>
+                        <a href="https://learn-tech-tips.blogspot.com/2021/12/what-is-blockchain.html"> 1. What is
+                            Blockchain </a>
                     </li>
-
-                    <li class="blockchain-menu">
-                        <div class="flex gap-2 ">
-                            <a href="#"> Blockchain </a>
-                            <svg style="width: 20px; " xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white">
-                                <g data-name="15.Arrow Down">
-                                    <path
-                                        d="M12 24a12 12 0 1 1 12-12 12.013 12.013 0 0 1-12 12zm0-22a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2z" />
-                                    <path d="m12 18.414-4.707-4.707 1.414-1.414L12 15.586l3.293-3.293 1.414 1.414L12 18.414z" />
-                                    <path d="M11 6h2v11h-2z" />
-                                </g>
-                            </svg>
-                        </div>
-                        <ul class="hidden">
-                            <li>
-                                <a href="https://learn-tech-tips.blogspot.com/2021/12/what-is-blockchain.html"> 1. What is
-                                    Blockchain </a>
-                            </li>
-
-                            <li> <a
-                                    href="https://learn-tech-tips.blogspot.com/2021/12/using-php-develop-blockchain-technology.html">
-                                    2. Make a Blockchain Demo using PHP </a>
-                            </li>
-
-                            <li> <a href="https://learn-tech-tips.blogspot.com/2021/12/loophples-of-the-current-blockchain.html"> 3.
-                                    Loopholes of the current Blockchain
-                                </a>
-                            </li>
-
-                            <li> <a
-                                    href="https://learn-tech-tips.blogspot.com/2021/12/blockchain-technology-create-virtual-currency-mining-technology.html">
-                                    4. Create virtual currency mining technology
-                                </a>
-                            </li>
-
-                            <li> <a
-                                    href="https://learn-tech-tips.blogspot.com/2021/12/blockchain-technology-how-to-create-own-bitcoin-virtual-currency.html">
-                                    5. How to create own Bitcoin virtual currency
-                                </a>
-                            </li>
-
-
-                            <li> <a href="https://learn-tech-tips.blogspot.com/2022/01/block-chain-application-in-the-life.html">6.
-                                    Blockchain Application In the life </a> </li>
-                        </ul>
+    
+                    <li> <a
+                            href="https://learn-tech-tips.blogspot.com/2021/12/using-php-develop-blockchain-technology.html">
+                            2. Make a Blockchain Demo using PHP </a>
                     </li>
-
-                    <li class="hidden full-stack-menu lg:block">
-                        <div class="flex gap-2">
-                            <a href="#"> FullStack </a>
-                            <svg style="width: 20px; " xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white">
-                                <g data-name="15.Arrow Down">
-                                    <path
-                                        d="M12 24a12 12 0 1 1 12-12 12.013 12.013 0 0 1-12 12zm0-22a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2z" />
-                                    <path d="m12 18.414-4.707-4.707 1.414-1.414L12 15.586l3.293-3.293 1.414 1.414L12 18.414z" />
-                                    <path d="M11 6h2v11h-2z" />
-                                </g>
-                            </svg>
-                        </div>
-                        <div class="hidden menu-box">
-                            <div>
-                                <h3> Frontend Developer </h3>
-                                <div>
-                                    <div> Language and Framework </div>
-                                    <hr />
-                                    <div class="grid grid-cols-5 gap-2 content">
-                                        <div> <a href="https://learn-tech-tips.blogspot.com/search/label/Axios"> Axios </a> </div>
-                                        <div> <a href="https://learn-tech-tips.blogspot.com/search/label/CSS"> CSS Series </a>
-                                        </div>
-                                        <div> <a href="https://learn-tech-tips.blogspot.com/search/label/HTML"> HTML </a> </div>
-                                        <div> <a href="https://learn-tech-tips.blogspot.com/search/label/Javascript"> Javascript
-                                            </a> </div>
-                                        <div> <a href="https://learn-tech-tips.blogspot.com/search/label/JQuery"> Jquery </a> </div>
-                                        <div> <a href="https://learn-tech-tips.blogspot.com/search/label/Login%20Form"> Login Form
-                                                Series </a> </div>
-                                        <div> <a href="https://learn-tech-tips.blogspot.com/search/label/Menu%20responsive"> Menu
-                                                Series </a> </div>
-                                        <div> <a href="https://learn-tech-tips.blogspot.com/search/label/NextJS"> NextJS </a> </div>
-                                        <div> <a href="https://learn-tech-tips.blogspot.com/search/label/Tailwind%20CSS">
-                                                TailwindCSS </a> </div>
-                                        <div> <a href="https://learn-tech-tips.blogspot.com/search/label/Zustand"> Zustand State
-                                                Management </a> </div>
-                                        <div> <a href="https://learn-tech-tips.blogspot.com/search/label/Web"> View more ... </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div>
-                                <h3> Backend Developer </h3>
-                                <div>
-                                    <div> Language and Framework </div>
-                                    <hr />
-                                    <div class="grid grid-cols-5 gap-2">
-                                        <div> <a href="https://learn-tech-tips.blogspot.com/search/label/C%20plus%20plus"> C++ </a>
-                                        </div>
-                                        <div> <a href="https://learn-tech-tips.blogspot.com/search/label/C%23"> C#</a> </div>
-                                        <div> <a href="https://learn-tech-tips.blogspot.com/search/label/Caching"> Caching </a>
-                                        </div>
-                                        <div> <a href="https://learn-tech-tips.blogspot.com/search/label/Cakephp"> CakePHP </a>
-                                        </div>
-                                        <div> <a href="https://learn-tech-tips.blogspot.com/search/label/Design%20Pattern"> Design
-                                                Pattern </a>
-                                        </div>
-                                        <div> <a href="https://learn-tech-tips.blogspot.com/search/label/IDE"> IDE </a> </div>
-                                        <div> <a href="https://learn-tech-tips.blogspot.com/search/label/JWT"> JWT </a> </div>
-                                        <div> <a href="https://learn-tech-tips.blogspot.com/search/label/Laravel"> Laravel </a>
-                                        </div>
-                                        <div> <a href="https://learn-tech-tips.blogspot.com/search/label/Lua%20Script"> Lua Script
-                                            </a> </div>
-
-                                        <div> <a href="https://learn-tech-tips.blogspot.com/search/label/Mongoose%20JWT"> Mongoose
-                                                JWT </a> </div>
-                                        <div> <a href="https://learn-tech-tips.blogspot.com/search/label/Magento%202"> Magento 2
-                                            </a> </div>
-                                        <div> <a href="https://learn-tech-tips.blogspot.com/search/label/NestJS"> NestJS </a> </div>
-                                        <div> <a href="https://learn-tech-tips.blogspot.com/search/label/NodeJs"> NodeJS </a> </div>
-                                        <div> <a href="https://learn-tech-tips.blogspot.com/search/label/PHP"> PHP </a> </div>
-                                        <div> <a href="https://learn-tech-tips.blogspot.com/search/label/Swagger"> Swagger </a>
-                                        </div>
-                                        <div> <a href="https://learn-tech-tips.blogspot.com/search/label/TypeORM"> TypeORM </a>
-                                        </div>
-                                        <div> <a href="https://learn-tech-tips.blogspot.com/search/label/WCF"> WCF </a> </div>
-                                        <div> <a href="https://learn-tech-tips.blogspot.com/search/label/Tips"> View more ... </a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <div> Database </div>
-                                    <hr />
-                                    <div class="grid grid-cols-5 gap-2">
-                                        <div> <a href="https://learn-tech-tips.blogspot.com/search/label/MongoDB"> MongoDB </a>
-                                        </div>
-                                        <div> <a href="https://learn-tech-tips.blogspot.com/search/label/SQL"> SQL Server </a>
-                                        </div>
-                                        <div> <a href="https://learn-tech-tips.blogspot.com/search/label/Tips"> View more ... </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
+    
+                    <li> <a href="https://learn-tech-tips.blogspot.com/2021/12/loophples-of-the-current-blockchain.html"> 3.
+                            Loopholes of the current Blockchain
+                        </a>
                     </li>
-
-                    <li class="devops-menu">
-                        <div class="flex gap-2">
-                            <a href="#"> Devops</a>
-                            <svg style="width: 20px;  " xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white">
-                                <g data-name="15.Arrow Down">
-                                    <path
-                                        d="M12 24a12 12 0 1 1 12-12 12.013 12.013 0 0 1-12 12zm0-22a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2z" />
-                                    <path d="m12 18.414-4.707-4.707 1.414-1.414L12 15.586l3.293-3.293 1.414 1.414L12 18.414z" />
-                                    <path d="M11 6h2v11h-2z" />
-                                </g>
-                            </svg>
-                        </div>
-                        <div class="hidden menu-box">
-                            <h3> Security </h3>
+    
+                    <li> <a
+                            href="https://learn-tech-tips.blogspot.com/2021/12/blockchain-technology-create-virtual-currency-mining-technology.html">
+                            4. Create virtual currency mining technology
+                        </a>
+                    </li>
+    
+                    <li> <a
+                            href="https://learn-tech-tips.blogspot.com/2021/12/blockchain-technology-how-to-create-own-bitcoin-virtual-currency.html">
+                            5. How to create own Bitcoin virtual currency
+                        </a>
+                    </li>
+    
+    
+                    <li> <a href="https://learn-tech-tips.blogspot.com/2022/01/block-chain-application-in-the-life.html">6.
+                            Blockchain Application In the life </a> </li>
+                </ul>
+            </li>
+    
+            <li class="full-stack-menu ">
+                <div class="flex gap-2">
+                    <a href="#"> FullStack </a>
+                    <svg style="width: 20px; " xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white">
+                        <g data-name="15.Arrow Down">
+                            <path
+                                d="M12 24a12 12 0 1 1 12-12 12.013 12.013 0 0 1-12 12zm0-22a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2z" />
+                            <path d="m12 18.414-4.707-4.707 1.414-1.414L12 15.586l3.293-3.293 1.414 1.414L12 18.414z" />
+                            <path d="M11 6h2v11h-2z" />
+                        </g>
+                    </svg>
+                </div>
+                <div class="hidden menu-box">
+                    <div>
+                        <h3> Frontend Developer </h3>
+                        <div>
+                            <div> Language and Framework </div>
                             <hr />
-                            <div class="flex gap-4 content">
-                                <div> <a href="https://learn-tech-tips.blogspot.com/search/label/Security"> Security </a> </div>
-                                <div> <a href="https://learn-tech-tips.blogspot.com/search/label/Tutorial"> View more ... </a>
+                            <div class="grid grid-cols-5 gap-2 content">
+                                <div> <a href="https://learn-tech-tips.blogspot.com/search/label/Axios"> Axios </a> </div>
+                                <div> <a href="https://learn-tech-tips.blogspot.com/search/label/CSS"> CSS Series </a>
                                 </div>
-                            </div>
-
-                            <h3> Docker </h3>
-                            <hr />
-                            <div class="flex gap-4 content">
-                                <div> <a href="https://learn-tech-tips.blogspot.com/search/label/Docker"> Create Docker file </a>
-                                </div>
-                                <div> <a href="https://learn-tech-tips.blogspot.com/search/label/Docker%20compose"> Docker Compose
-                                        Command </a>
-                                </div>
+                                <div> <a href="https://learn-tech-tips.blogspot.com/search/label/HTML"> HTML </a> </div>
+                                <div> <a href="https://learn-tech-tips.blogspot.com/search/label/Javascript"> Javascript
+                                    </a> </div>
+                                <div> <a href="https://learn-tech-tips.blogspot.com/search/label/JQuery"> Jquery </a> </div>
+                                <div> <a href="https://learn-tech-tips.blogspot.com/search/label/Login%20Form"> Login Form
+                                        Series </a> </div>
+                                <div> <a href="https://learn-tech-tips.blogspot.com/search/label/Menu%20responsive"> Menu
+                                        Series </a> </div>
+                                <div> <a href="https://learn-tech-tips.blogspot.com/search/label/NextJS"> NextJS </a> </div>
+                                <div> <a href="https://learn-tech-tips.blogspot.com/search/label/Tailwind%20CSS">
+                                        TailwindCSS </a> </div>
+                                <div> <a href="https://learn-tech-tips.blogspot.com/search/label/Zustand"> Zustand State
+                                        Management </a> </div>
                                 <div> <a href="https://learn-tech-tips.blogspot.com/search/label/Web"> View more ... </a>
                                 </div>
                             </div>
-
-
-                    </li>
-                    <li> <a href="https://learn-tech-tips.blogspot.com/search/label/AI"> AI </a> </li>
-
-                    <li class="solved-menu">
-                        <div class="flex gap-2">
-                            <a href="#"> Solved a hard bug </a>
-                            <svg style="width: 20px;  " xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white">
-                                <g data-name="15.Arrow Down">
-                                    <path
-                                        d="M12 24a12 12 0 1 1 12-12 12.013 12.013 0 0 1-12 12zm0-22a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2z" />
-                                    <path d="m12 18.414-4.707-4.707 1.414-1.414L12 15.586l3.293-3.293 1.414 1.414L12 18.414z" />
-                                    <path d="M11 6h2v11h-2z" />
-                                </g>
-                            </svg>
                         </div>
-                        <ul class="hidden">
-                            <li> <a href="https://learn-tech-tips.blogspot.com/2023/02/how-to-fix-cors-issue-cakephp.html">How to
-                                    fix "Cross-Origin Resource Sharing" "CORS" Issue in Cakephp 4+ </a> </li>
-                            <li> <a
-                                    href="https://learn-tech-tips.blogspot.com/2022/05/solved-camtasia-studio-it-is-either-an-unsupported-media-type-or-required-codecs-are-not-found.html">Camtasia:
-                                    "IT IS EITHER AN UNSUPPORTED MEDIA TYPE OR REQUIRED CODECS ARE NOT FOUND"</a> </li>
-                            <li> <a
-                                    href="https://learn-tech-tips.blogspot.com/2015/04/tips-fixing-adobe-cs6-service-manager-stopped-working.html">Fixed
-                                    "ADOBE CS6 SERVICE MANAGER HAS STOPPED WORKING" error</a> </li>
-                            <li> <a
-                                    href="https://learn-tech-tips.blogspot.com/2015/05/fix-remote-session-was-disconnected-because-liscense-store-creaion-failed-with-access-denied.html">
-                                    Fixed "THE REMOTE SESSION WAS DISCONNECTED BECAUSE LICENSE STORE CREATION FAILED WITH ACCESS
-                                    DENIED"</a> </li>
-
-                            <li> <a
-                                    href="https://learn-tech-tips.blogspot.com/2015/04/tips-how-to-fix-virtual-memory-remote-desktop.html">
-                                    Fixed "REMOTE DESKTOP SESSION IS ABOUT TO END" AND "THE REMOTE SESSION WAS DISCONNECTED"</a>
-                            </li>
-                            <li> <a
-                                    href="https://learn-tech-tips.blogspot.com/2016/03/remote-session-was-disconnected-no-administrator-liscense.html">
-                                    Fixed "REMOTE SESSION WAS DISCONNECTED" BECAUSE LICENSE STORE CREATION FAILED WITH ACCESS
-                                    DENIED"</a> </li>
-
-                            <li> <a href="https://learn-tech-tips.blogspot.com/search/label/Solved%20issue"> View more ... </a>
-                            </li>
-                        </ul>
+                    </div>
+    
+                    <div>
+                        <h3> Backend Developer </h3>
+                        <div>
+                            <div> Language and Framework </div>
+                            <hr />
+                            <div class="grid grid-cols-5 gap-2">
+                                <div> <a href="https://learn-tech-tips.blogspot.com/search/label/C%20plus%20plus"> C++ </a>
+                                </div>
+                                <div> <a href="https://learn-tech-tips.blogspot.com/search/label/C%23"> C#</a> </div>
+                                <div> <a href="https://learn-tech-tips.blogspot.com/search/label/Caching"> Caching </a>
+                                </div>
+                                <div> <a href="https://learn-tech-tips.blogspot.com/search/label/Cakephp"> CakePHP </a>
+                                </div>
+                                <div> <a href="https://learn-tech-tips.blogspot.com/search/label/Design%20Pattern"> Design
+                                        Pattern </a>
+                                </div>
+                                <div> <a href="https://learn-tech-tips.blogspot.com/search/label/IDE"> IDE </a> </div>
+                                <div> <a href="https://learn-tech-tips.blogspot.com/search/label/JWT"> JWT </a> </div>
+                                <div> <a href="https://learn-tech-tips.blogspot.com/search/label/Laravel"> Laravel </a>
+                                </div>
+                                <div> <a href="https://learn-tech-tips.blogspot.com/search/label/Lua%20Script"> Lua Script
+                                    </a> </div>
+    
+                                <div> <a href="https://learn-tech-tips.blogspot.com/search/label/Mongoose%20JWT"> Mongoose
+                                        JWT </a> </div>
+                                <div> <a href="https://learn-tech-tips.blogspot.com/search/label/Magento%202"> Magento 2
+                                    </a> </div>
+                                <div> <a href="https://learn-tech-tips.blogspot.com/search/label/NestJS"> NestJS </a> </div>
+                                <div> <a href="https://learn-tech-tips.blogspot.com/search/label/NodeJs"> NodeJS </a> </div>
+                                <div> <a href="https://learn-tech-tips.blogspot.com/search/label/PHP"> PHP </a> </div>
+                                <div> <a href="https://learn-tech-tips.blogspot.com/search/label/Swagger"> Swagger </a>
+                                </div>
+                                <div> <a href="https://learn-tech-tips.blogspot.com/search/label/TypeORM"> TypeORM </a>
+                                </div>
+                                <div> <a href="https://learn-tech-tips.blogspot.com/search/label/WCF"> WCF </a> </div>
+                                <div> <a href="https://learn-tech-tips.blogspot.com/search/label/Tips"> View more ... </a>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div>
+                            <div> Database </div>
+                            <hr />
+                            <div class="grid grid-cols-5 gap-2">
+                                <div> <a href="https://learn-tech-tips.blogspot.com/search/label/MongoDB"> MongoDB </a>
+                                </div>
+                                <div> <a href="https://learn-tech-tips.blogspot.com/search/label/SQL"> SQL Server </a>
+                                </div>
+                                <div> <a href="https://learn-tech-tips.blogspot.com/search/label/Tips"> View more ... </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+            </li>
+    
+            <li class="devops-menu">
+                <div class="flex gap-2">
+                    <a href="#"> Devops</a>
+                    <svg style="width: 20px;  " xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white">
+                        <g data-name="15.Arrow Down">
+                            <path
+                                d="M12 24a12 12 0 1 1 12-12 12.013 12.013 0 0 1-12 12zm0-22a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2z" />
+                            <path d="m12 18.414-4.707-4.707 1.414-1.414L12 15.586l3.293-3.293 1.414 1.414L12 18.414z" />
+                            <path d="M11 6h2v11h-2z" />
+                        </g>
+                    </svg>
+                </div>
+                <div class="hidden menu-box">
+                    <h3> Security </h3>
+                    <hr />
+                    <div class="flex gap-4 content">
+                        <div> <a href="https://learn-tech-tips.blogspot.com/search/label/Security"> Security </a> </div>
+                        <div> <a href="https://learn-tech-tips.blogspot.com/search/label/Tutorial"> View more ... </a>
+                        </div>
+                    </div>
+    
+                    <h3> Docker </h3>
+                    <hr />
+                    <div class="flex gap-4 content">
+                        <div> <a href="https://learn-tech-tips.blogspot.com/search/label/Docker"> Create Docker file </a>
+                        </div>
+                        <div> <a href="https://learn-tech-tips.blogspot.com/search/label/Docker%20compose"> Docker Compose
+                                Command </a>
+                        </div>
+                        <div> <a href="https://learn-tech-tips.blogspot.com/search/label/Web"> View more ... </a>
+                        </div>
+                    </div> 
+                </div> 
+            </li>
+            <li> <a href="https://learn-tech-tips.blogspot.com/search/label/AI"> AI </a> </li>
+    
+            <li class="solved-menu">
+                <div class="flex gap-2">
+                    <a href="#"> Solved a hard bug </a>
+                    <svg style="width: 20px;  " xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white">
+                        <g data-name="15.Arrow Down">
+                            <path
+                                d="M12 24a12 12 0 1 1 12-12 12.013 12.013 0 0 1-12 12zm0-22a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2z" />
+                            <path d="m12 18.414-4.707-4.707 1.414-1.414L12 15.586l3.293-3.293 1.414 1.414L12 18.414z" />
+                            <path d="M11 6h2v11h-2z" />
+                        </g>
+                    </svg>
+                </div>
+                <ul class="hidden">
+                    <li> <a href="https://learn-tech-tips.blogspot.com/2023/02/how-to-fix-cors-issue-cakephp.html">How to
+                            fix "Cross-Origin Resource Sharing" "CORS" Issue in Cakephp 4+ </a> </li>
+                    <li> <a
+                            href="https://learn-tech-tips.blogspot.com/2022/05/solved-camtasia-studio-it-is-either-an-unsupported-media-type-or-required-codecs-are-not-found.html">Camtasia:
+                            "IT IS EITHER AN UNSUPPORTED MEDIA TYPE OR REQUIRED CODECS ARE NOT FOUND"</a> </li>
+                    <li> <a
+                            href="https://learn-tech-tips.blogspot.com/2015/04/tips-fixing-adobe-cs6-service-manager-stopped-working.html">Fixed
+                            "ADOBE CS6 SERVICE MANAGER HAS STOPPED WORKING" error</a> </li>
+                    <li> <a
+                            href="https://learn-tech-tips.blogspot.com/2015/05/fix-remote-session-was-disconnected-because-liscense-store-creaion-failed-with-access-denied.html">
+                            Fixed "THE REMOTE SESSION WAS DISCONNECTED BECAUSE LICENSE STORE CREATION FAILED WITH ACCESS
+                            DENIED"</a> </li>
+    
+                    <li> <a
+                            href="https://learn-tech-tips.blogspot.com/2015/04/tips-how-to-fix-virtual-memory-remote-desktop.html">
+                            Fixed "REMOTE DESKTOP SESSION IS ABOUT TO END" AND "THE REMOTE SESSION WAS DISCONNECTED"</a>
+                    </li>
+                    <li> <a
+                            href="https://learn-tech-tips.blogspot.com/2016/03/remote-session-was-disconnected-no-administrator-liscense.html">
+                            Fixed "REMOTE SESSION WAS DISCONNECTED" BECAUSE LICENSE STORE CREATION FAILED WITH ACCESS
+                            DENIED"</a> </li>
+    
+                    <li> <a href="https://learn-tech-tips.blogspot.com/search/label/Solved%20issue"> View more ... </a>
                     </li>
                 </ul>
-               
-              </div>
-            </div>
-          </div>
-        </div>
-        <b:section class='menu' id='main-menu' maxwidgets='1' name='Main Menu' showaddelement='yes'>
-          <b:widget id='BlogSearch1' locked='false' title='Search This Blog' type='BlogSearch' version='1'>
-            <b:includable id='main'>
-              <div class='widget-content'>
-                <div expr:id='data:widget.instanceId + &quot;_form&quot;'>
-                  <form class='gsc-search-box' expr:action='data:blog.searchUrl'>
-                    <b:attr cond='not data:view.isPreview' name='target' value='_top'/>
-                    <div class='desktop:absolute desktop:top-[15px] desktop:right-[10px] flex space-x-2 items-center'>
-                      <input autocomplete='off' class='w-[250px] rounded-md p-2 h-[35px]' expr:value='data:view.isSearch ? data:view.search.query.escaped : &quot;&quot;' name='q' size='10' title='search' type='text'/>
-                      <button class='bg-[color:var(--orange)] text-white px-4 py-2 rounded-md hover:bg-[color:--var(--blue)]' expr:value='data:messages.search' title='search' type='submit'> Search </button>
- 
-                    </div>
-                  </form>
-                </div>
-              </div>
-              <b:include name='quickedit'/>
-            </b:includable>
-          </b:widget>
-        </b:section>
-      </div>
+            </li>
+          </ul>
+        </div>  
+      </div> 
+      <!-- End Menu -->
+      
       <!-- Break News -->
       <div class='flex mt-[10px] items-center'>
         <div class='p-2 bg-[color:var(--blue)] text-white rounded-l-md rounded-r-none  w-[180px] flex space-x-2 items-center'>
@@ -3050,7 +3160,7 @@ div .download {
                               <div class='relative'>
                                 <div expr:class='data:showSnippets ? &quot;item-content&quot; : &quot;item-thumbnail-only&quot;'>
                                   <b:if cond='data:post.featuredImage.isResizable or data:post.thumbnail'>
-                                    <div class='w-full item-thumbnail mt-[140px] flex justify-center'>
+                                    <div class='flex justify-center w-full item-thumbnail' style="margin-top: 140px">
                                       <a expr:href='data:post.href' target='_blank'>
                                         <b:with value='data:post.featuredImage.isResizable  ? resizeImage(data:post.featuredImage, 400, &quot;1:1&quot;) : data:post.thumbnail' var='image'>
                                           <img alt='' border='0' class=' hover:scale-110 w-[330px] shadow-lg p-4 text-white  ' expr:src='data:image'/>
@@ -3064,7 +3174,7 @@ div .download {
                                     </a>
                                   </h2>
                                   <b:if cond='data:showSnippets'>
-                                    <div class='p-2 mt-2 text-justify bg-white item-snippet mobile:text-sm desktop:text-sm min-h-[450px]'>
+                                    <div class='p-2 mt-2 text-justify bg-white item-snippet mobile:text-sm desktop:text-sm' style="min-height: 600px">
                                       <!-- <data:post.dateHeader/> ko co thuoc tinh nay -->
                                       <data:post.snippet/>
                                     </div>
@@ -3106,93 +3216,39 @@ div .download {
           </b:if>
         </div>
         <div class='desktop:w-[320px] bg-gray-200 rounded-lg shadow-lg p-2 mobile:w-full' id='right'>
-          <!-- progress learning -->
-          <div class='text-sm'>
+          
+          <!-- Search --> 
+          <div class='text-sm mb-[10px]'>
             <div class='bg-[color:var(--orange)] text-white p-2 rounded-t-md flex space-x-4 items-center'>
-              <div>
-                <svg fill='white' id='Layer_1' style='enable-background:new 0 0 100 100;' version='1.1' viewBox='0 0 100 100' width='30px' xml:space='preserve' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'>
-                  <g>
-                    <path d='M71.1,86H28.9c-2.7,0-4.9-2.2-4.9-4.9V18.9c0-2.7,2.2-4.9,4.9-4.9H51v2H28.9c-1.6,0-2.9,1.3-2.9,2.9v62.2   c0,1.6,1.3,2.9,2.9,2.9h42.2c1.6,0,2.9-1.3,2.9-2.9V40h2v41.1C76,83.8,73.8,86,71.1,86z'/>
-                  </g>
-                  <g>
-                    <path d='M75,41H54.9c-2.7,0-4.9-2.2-4.9-4.9V15c0-0.6,0.4-1,1-1s1,0.4,1,1v21.1c0,1.6,1.3,2.9,2.9,2.9H75c0.6,0,1,0.4,1,1   S75.6,41,75,41z'/>
-                  </g>
-                  <g>
-                    <path d='M75,41c-0.3,0-0.5-0.1-0.7-0.3l-24-25c-0.4-0.4-0.4-1,0-1.4c0.4-0.4,1-0.4,1.4,0l24,25c0.4,0.4,0.4,1,0,1.4   C75.5,40.9,75.2,41,75,41z'/>
-                  </g>
-                  <g>
-                    <path d='M65,58H35c-0.6,0-1-0.4-1-1s0.4-1,1-1h30c0.6,0,1,0.4,1,1S65.5,58,65,58z'/>
-                  </g>
-                  <g>
-                    <path d='M65,52H35c-0.6,0-1-0.4-1-1s0.4-1,1-1h30c0.6,0,1,0.4,1,1S65.5,52,65,52z'/>
-                  </g>
-                  <g>
-                    <path d='M65,46H35c-0.6,0-1-0.4-1-1s0.4-1,1-1h30c0.6,0,1,0.4,1,1S65.5,46,65,46z'/>
-                  </g>
-                </svg>
-              </div>
-								Way to become FullStack developer
+              <svg class="feather feather-search" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/></svg> 
+              Search 
             </div>
             <div class='flex w-full p-2 space-x-2 bg-white'>
-              <div class='grow mobile:w-1/2 mobile:flex-none'>
-                <span class='text-bold bg-[color:var(--blue)] p-2 w-full text-white'>1. Backend</span>
-                <div class='mt-2'>
-                  <a class='hover:text-[color:var(--orange)]' href='/search/label/PHP' target='_blank'>1.1 PHP</a> 
-										(
-                  <a class='hover:cursor-pointer hover:text-[color:var(--orange)]' href='/search/label/Cakephp' target='_blank'>CakePHP  </a>
-                  <a class='hover:cursor-pointer hover:text-[color:var(--orange)]' href='/search/label/Mangento' target='_blank'> Mangento  </a>
-                  <a class='hover:cursor-pointer hover:text-[color:var(--orange)]' href='/search/label/Laravel' target='_blank'> Laravel</a>)
-                </div>
-                <div class='mt-2'>
-                  <a class='hover:text-[color:var(--orange)]' href='/search/label/Nodejs' target='_blank'>1.2 NodeJS</a>
-                </div>
-                <div class='mt-2'>
-                  <a class='hover:text-[color:var(--orange)]' href='/search/label/C%23' target='_blank'>1.3 CSharp</a>
-                </div>
-              </div>
-              <div class='grow mobile:w-1/2 mobile:flex-none'>
-                <span class='text-bold bg-[color:var(--blue)] p-2 w-full text-white '>2. Frontend</span>
-                <div class='mt-2'>
-                  <span>2.1 Basic</span>
-										(
-                  <a class='hover:text-[color:var(--orange)]' href='/search/label/HTML' target='_blank'>HTML</a>
-                  <a class='hover:text-[color:var(--orange)]' href='/search/label/CSS' target='_blank'>CSS</a>
-                  <a class='hover:text-[color:var(--orange)]' href='/search/label/Tailwind' target='_blank'>Tailwind CSS</a>)
-                </div>
-                <div class='mt-2'>
-                  <a class='hover:text-[color:var(--orange)]' href='/search/label/NextJs' target='_blank'>2.2 NextJs</a>
-                </div>
-              </div>
+              <b:section class='menu' id='main-menu' maxwidgets='1' name='Main Menu' showaddelement='yes'>
+                <b:widget id='BlogSearch1' locked='false' title='Search This Blog' type='BlogSearch' version='1'>
+                  <b:includable id='main'>
+                    <div class='widget-content'>
+                      <div expr:id='data:widget.instanceId + &quot;_form&quot;'>
+                        <form class='gsc-search-box' expr:action='data:blog.searchUrl'>
+                          <b:attr cond='not data:view.isPreview' name='target' value='_top'/>
+                          <div class='flex items-center space-x-2 '>
+                            <input autocomplete='off' style="border: 1px solid var(--orange)" class='w-[230px] rounded-md p-2 h-[35px]' expr:value='data:view.isSearch ? data:view.search.query.escaped : &quot;&quot;' name='q' size='10' title='search' type='text'/>
+                            <button class='bg-[color:var(--orange)] text-white px-2 py-2 rounded-md hover:bg-[color:--var(--blue)]' expr:value='data:messages.search' title='search' type='submit'>  
+                              <svg class="feather feather-search" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/></svg>
+
+                            </button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                    <b:include name='quickedit'/>
+                  </b:includable>
+                </b:widget>
+              </b:section> 
             </div>
-            <div class='flex w-full p-2 space-x-2 bg-white'>
-              <div class='grow mobile:w-1/2 mobile:flex-none'>
-                <a class='text-bold bg-[color:var(--blue)] p-2 w-full text-white ' href='/search/label/Docker%20compose' target='_blank'>3. DevOps </a>
-              </div>
-              <div class='grow mobile:w-1/2 mobile:flex-none'>
-                <span class='text-bold bg-[color:var(--blue)] p-2 w-full text-white '>4. Database</span>
-                <div class='mt-2'>
-                  <a class='hover:text-[color:var(--orange)]' href='/search/label/Microsoft%20SQL%20Server' target='_blank'>Microsoft SQL Server</a>
-                </div>
-              </div>
-            </div>
-            <div class='flex w-full p-2 space-x-2 bg-white rounded-b-md'>
-              <div class='grow mobile:w-1/2 mobile:flex-none'>
-                <a class='text-bold bg-[color:var(--blue)] p-2 w-full text-white ' href='/search/label/Design Pattern' target='_blank'>5. Design Pattern</a>
-                <div class='mt-2'>
-                  <div>Singleton Pattern </div>
-                  <div> Composite Pattern </div>
-                  <div> Flyweighr Pattern </div>
-                  <div> Facade Pattern </div>
-                  <div> Adapter Pattern </div>
-                  <div> Template Method </div>
-                  <div> Builder Pattern</div>
-                </div>
-              </div>
-              <div class='grow mobile:w-1/2 mobile:flex-none'>
-                <a class='text-bold bg-[color:var(--blue)] p-2 w-full text-white ' href='/search/label/Photoshop' target='_blank'>6. Photoshop</a>
-              </div>
-            </div>
-          </div>
+          </div> 
+          
+        
           <!-- Feature Ads-->
           <b:section class='FeatureAds mt-[10px]' id='FeatureAdsRightSide' maxwidgets='10' preferred='yes'>
             <b:widget id='HTML1' locked='false' title='' type='HTML'>
@@ -3487,6 +3543,96 @@ div .download {
               </b:includable>
             </b:widget>
           </b:section>
+
+
+          <!-- progress learning -->
+          <div class='text-sm'>
+            <div class='bg-[color:var(--orange)] text-white p-2 rounded-t-md flex space-x-4 items-center'>
+              <div>
+                <svg fill='white' id='Layer_1' style='enable-background:new 0 0 100 100;' version='1.1' viewBox='0 0 100 100' width='30px' xml:space='preserve' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'>
+                  <g>
+                    <path d='M71.1,86H28.9c-2.7,0-4.9-2.2-4.9-4.9V18.9c0-2.7,2.2-4.9,4.9-4.9H51v2H28.9c-1.6,0-2.9,1.3-2.9,2.9v62.2   c0,1.6,1.3,2.9,2.9,2.9h42.2c1.6,0,2.9-1.3,2.9-2.9V40h2v41.1C76,83.8,73.8,86,71.1,86z'/>
+                  </g>
+                  <g>
+                    <path d='M75,41H54.9c-2.7,0-4.9-2.2-4.9-4.9V15c0-0.6,0.4-1,1-1s1,0.4,1,1v21.1c0,1.6,1.3,2.9,2.9,2.9H75c0.6,0,1,0.4,1,1   S75.6,41,75,41z'/>
+                  </g>
+                  <g>
+                    <path d='M75,41c-0.3,0-0.5-0.1-0.7-0.3l-24-25c-0.4-0.4-0.4-1,0-1.4c0.4-0.4,1-0.4,1.4,0l24,25c0.4,0.4,0.4,1,0,1.4   C75.5,40.9,75.2,41,75,41z'/>
+                  </g>
+                  <g>
+                    <path d='M65,58H35c-0.6,0-1-0.4-1-1s0.4-1,1-1h30c0.6,0,1,0.4,1,1S65.5,58,65,58z'/>
+                  </g>
+                  <g>
+                    <path d='M65,52H35c-0.6,0-1-0.4-1-1s0.4-1,1-1h30c0.6,0,1,0.4,1,1S65.5,52,65,52z'/>
+                  </g>
+                  <g>
+                    <path d='M65,46H35c-0.6,0-1-0.4-1-1s0.4-1,1-1h30c0.6,0,1,0.4,1,1S65.5,46,65,46z'/>
+                  </g>
+                </svg>
+              </div>
+								Way to become FullStack developer
+            </div>
+            <div class='flex w-full p-2 space-x-2 bg-white'>
+              <div class='grow mobile:w-1/2 mobile:flex-none'>
+                <span class='text-bold bg-[color:var(--blue)] p-2 w-full text-white'>1. Backend</span>
+                <div class='mt-2'>
+                  <a class='hover:text-[color:var(--orange)]' href='/search/label/PHP' target='_blank'>1.1 PHP</a> 
+										(
+                  <a class='hover:cursor-pointer hover:text-[color:var(--orange)]' href='/search/label/Cakephp' target='_blank'>CakePHP  </a>
+                  <a class='hover:cursor-pointer hover:text-[color:var(--orange)]' href='/search/label/Mangento' target='_blank'> Mangento  </a>
+                  <a class='hover:cursor-pointer hover:text-[color:var(--orange)]' href='/search/label/Laravel' target='_blank'> Laravel</a>)
+                </div>
+                <div class='mt-2'>
+                  <a class='hover:text-[color:var(--orange)]' href='/search/label/Nodejs' target='_blank'>1.2 NodeJS</a>
+                </div>
+                <div class='mt-2'>
+                  <a class='hover:text-[color:var(--orange)]' href='/search/label/C%23' target='_blank'>1.3 CSharp</a>
+                </div>
+              </div>
+              <div class='grow mobile:w-1/2 mobile:flex-none'>
+                <span class='text-bold bg-[color:var(--blue)] p-2 w-full text-white '>2. Frontend</span>
+                <div class='mt-2'>
+                  <span>2.1 Basic</span>
+										(
+                  <a class='hover:text-[color:var(--orange)]' href='/search/label/HTML' target='_blank'>HTML</a>
+                  <a class='hover:text-[color:var(--orange)]' href='/search/label/CSS' target='_blank'>CSS</a>
+                  <a class='hover:text-[color:var(--orange)]' href='/search/label/Tailwind' target='_blank'>Tailwind CSS</a>)
+                </div>
+                <div class='mt-2'>
+                  <a class='hover:text-[color:var(--orange)]' href='/search/label/NextJs' target='_blank'>2.2 NextJs</a>
+                </div>
+              </div>
+            </div>
+            <div class='flex w-full p-2 space-x-2 bg-white'>
+              <div class='grow mobile:w-1/2 mobile:flex-none'>
+                <a class='text-bold bg-[color:var(--blue)] p-2 w-full text-white ' href='/search/label/Docker%20compose' target='_blank'>3. DevOps </a>
+              </div>
+              <div class='grow mobile:w-1/2 mobile:flex-none'>
+                <span class='text-bold bg-[color:var(--blue)] p-2 w-full text-white '>4. Database</span>
+                <div class='mt-2'>
+                  <a class='hover:text-[color:var(--orange)]' href='/search/label/Microsoft%20SQL%20Server' target='_blank'>Microsoft SQL Server</a>
+                </div>
+              </div>
+            </div>
+            <div class='flex w-full p-2 space-x-2 bg-white rounded-b-md'>
+              <div class='grow mobile:w-1/2 mobile:flex-none'>
+                <a class='text-bold bg-[color:var(--blue)] p-2 w-full text-white ' href='/search/label/Design Pattern' target='_blank'>5. Design Pattern</a>
+                <div class='mt-2'>
+                  <div>Singleton Pattern </div>
+                  <div> Composite Pattern </div>
+                  <div> Flyweighr Pattern </div>
+                  <div> Facade Pattern </div>
+                  <div> Adapter Pattern </div>
+                  <div> Template Method </div>
+                  <div> Builder Pattern</div>
+                </div>
+              </div>
+              <div class='grow mobile:w-1/2 mobile:flex-none'>
+                <a class='text-bold bg-[color:var(--blue)] p-2 w-full text-white ' href='/search/label/Photoshop' target='_blank'>6. Photoshop</a>
+              </div>
+            </div>
+          </div>
+          
         </div>
       </div>
     </div>
@@ -3567,7 +3713,7 @@ For backend, I&#39;m good at PHP (especially CAKEPHP), NodeJS / NestJS, .NET C# 
     <div class='flex justify-center flex-col w-full mx-auto bg-gray-900 text-white p-4 h-[200px] text-center'>
       <div>
 				Copyright @2022(November) Version 1.0.0 - By
-        <span class='bg-[color:var(--orange)] text-white px-2 py-[1px] '>WebDevZone</span>
+        <span class='bg-[color:var(--orange)] text-white px-2 py-[1px] '>Webzone, all things Tech Tips for Web Development</span>
         <span class='text-[color:var(--blue)] font-bold italic'>Z</span>idane
       </div>
       <div class='mt-[10px]'>
@@ -3806,23 +3952,10 @@ function scrollWin() {
     $('li.special-menu > div > a').mouseover(function () {  // not use hover, because hover each mouseout, mouseover will trigger
         addRandomSecondSection();
     })
+      
+
+
     
-    $('.mobile-menu').click(function() {
-        var element = $(".desktop-menu"); 
-        if (element.is(':visible')) {
-            $(".desktop-menu").addClass('hidden');
-            
-        } else { 
-            $(".desktop-menu").removeClass('hidden');
-            $(".desktop-menu").addClass('flex-col');
-        }
-    });
-
-
-
-
-
-
 
 
 
