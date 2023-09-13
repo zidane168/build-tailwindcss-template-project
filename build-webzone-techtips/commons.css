@@ -597,9 +597,9 @@ div .download {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 150ms;
     text-decoration: underline;
+    display: inline-block;      /* need use this so a element can use transition and transform, if u use button will dont need use */
 }
 
 #Blog1 a:hover{
-    transform: scale(1.2);
-    
+    transform: scale(1.1); 
 }
