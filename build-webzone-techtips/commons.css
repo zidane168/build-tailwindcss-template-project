@@ -103,19 +103,7 @@ pre.prettyprint {
 }
 
 body {
-    font-family: -apple-system, system-ui, &quot;
-    system-ui&quot;
-    ,
-    &quot;
-    Segoe UI&quot;
-    ,
-    Roboto,
-    Oxygen-Sans,
-    Ubuntu,
-    Cantarell,
-    &quot;
-    Helvetica Neue&quot;
-    ,
+    font-family: "Helvetica Neue",
     sans-serif;
     font-size: 15px;
     font-style: normal;
