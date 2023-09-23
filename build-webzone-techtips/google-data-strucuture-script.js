@@ -133,6 +133,24 @@
             "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDsleaS2FCsypdozl61L4JK6VuvLfcigSnAwiOiwjZ0H4hSo5Xppgy5wj5SxrktAOonLrBkrSk-6ak_LSJR2j9hndblXXw8wmXYGFIlevxrG2gNN9EqtespyDfXOCwoO4boom5kzsVYMnWc5SzhOvbOhS2ndd_tugjPd2laCJ1UjdsiJilhezJcet-QBs/s796/RabbitMQ%20Login%20page.png"
         ],
         "url": "https://learn-tech-tips.blogspot.com/2023/07/how-to-use-docker-compose-to-set-up-a-rabbitmq-service.html"
+    },
+    {
+        "@context": "https://schema.org/", 
+        "@type": "Article",
+        "headline": "An introduction TO 'SCRUM PROCESS in Software Development': A Comprehensive Overview",
+        "author": {
+            "@type": "Person",
+            "name": "Vi Ly (Zidane)",
+            "url": "https://learn-tech-tips.blogspot.com/p/about_83.html"
+        }, 
+        "name": "An introduction TO 'SCRUM PROCESS in Software Development': A Comprehensive Overview", 
+        "description": "Scrum is an iterative and incremental agile software development framework for managing product development. It defines 'a flexible, holistic product development strategy where a development team works as a unit to reach a common goal', challenges assumptions of the 'traditional, sequential approach' to product development, and enables teams to self-organize by encouraging physical co-location or close online collaboration of all team members, as well as daily face-to-face communication among all team members and disciplines involved.",
+        "image": [
+            "https://4.bp.blogspot.com/-m9pNRgwRgak/V7FBD0xeejI/AAAAAAAACrI/_3wx_zG_zd8iik2FMeDrbueaMWmfpBatQCLcB/s1600/Scrum_Framework_en.png",
+            "https://2.bp.blogspot.com/-G3bAvLgpRY8/V7GXm7kbQPI/AAAAAAAACro/iBg-ZQhF0IwrswB8oF1sb1vZeoBBrZ4TACLcB/s1600/Scrum_Framework_en_2.png",
+            "https://4.bp.blogspot.com/-fGTfLOfV6rc/V7GdiAykXEI/AAAAAAAACr8/QTAsWmLtzQ0TJevHTFZjAFT90BFVh2GuwCLcB/s1600/SampleBurndownChart.png"
+        ],
+        "url": "https://learn-tech-tips.blogspot.com/2016/08/scrum-process.html"
     } 
 ]
 </script>
